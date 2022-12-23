@@ -1,9 +1,13 @@
 {
-    "name": "plesk/api-php-lib",
+    "name": "yasserbelhimer/plesk-api-php-lib",
     "type": "library",
     "description": "PHP object-oriented library for Plesk XML-RPC API",
     "license": "Apache-2.0",
     "authors": [
+        {
+            "name": "Yasser belhimer",
+            "email": "yasserbelhimer@gmail.com"
+        },
         {
             "name": "Alexei Yuzhakov",
             "email": "sibprogrammer@gmail.com"
