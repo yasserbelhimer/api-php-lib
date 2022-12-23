@@ -11,11 +11,11 @@ class Info extends \PleskX\Api\Struct
     /** @var string */
     public $name;
 
-    public function __construct($apiResponse)
-    {
-        $this->_initScalarProperties($apiResponse, [
+    public function __construct($apiResponse,$fields= [
             'id',
             'name',
-        ]);
+        ])
+    {
+        $this->_initScalarProperties($apiResponse, $fields);
     }
 }

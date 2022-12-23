@@ -14,12 +14,12 @@ class GeneralInfo extends \PleskX\Api\Struct
     /** @var string */
     public $description;
 
-    public function __construct($apiResponse)
+    public function __construct($apiResponse, $fields = [
+        'id',
+        'name',
+        'description',
+    ])
     {
-        $this->_initScalarProperties($apiResponse, [
-            'id',
-            'name',
-            'description',
-        ]);
+        $this->_initScalarProperties($apiResponse, $fields);
     }
 }
